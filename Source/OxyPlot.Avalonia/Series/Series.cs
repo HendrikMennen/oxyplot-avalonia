@@ -272,13 +272,13 @@ namespace OxyPlot.Avalonia
         {
             if (oldValue is INotifyCollectionChanged collection)
             {
-                WeakSubscriptionManager.Unsubscribe(collection, "CollectionChanged", eventListener);
+               //WeakSubscriptionManager.Unsubscribe(collection, "CollectionChanged", eventListener);
             }
 
             collection = newValue as INotifyCollectionChanged;
             if (collection != null)
             {
-                WeakSubscriptionManager.Subscribe(collection, "CollectionChanged", eventListener);
+                //WeakSubscriptionManager.Subscribe(collection, "CollectionChanged", eventListener);
             }
         }
 

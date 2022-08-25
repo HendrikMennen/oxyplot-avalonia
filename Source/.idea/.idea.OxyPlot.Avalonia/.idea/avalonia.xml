@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Examples/Avalonia/AvaloniaExamples/App.xaml" value="Examples/Avalonia/AvaloniaExamples/AvaloniaExamples.csproj" />
+        <entry key="Examples/Avalonia/AvaloniaExamples/Examples/AnimationsDemo/Controls/AnimationSettingsControl.xaml" value="Examples/Avalonia/AvaloniaExamples/AvaloniaExamples.csproj" />
+        <entry key="Examples/Avalonia/AvaloniaExamples/MainWindow.xaml" value="Examples/Avalonia/AvaloniaExamples/AvaloniaExamples.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
