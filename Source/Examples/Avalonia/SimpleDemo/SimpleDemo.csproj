@@ -15,5 +15,6 @@
     <PackageReference Include="Serilog.Sinks.Trace" Version="2.1.0" />
     <PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview1" />
     <PackageReference Include="Avalonia.Diagnostics" Version="11.0.0-preview1" />
+	<PackageReference Include="Avalonia.Themes.Simple" Version="11.0.0-preview1" />
   </ItemGroup>
 </Project>
