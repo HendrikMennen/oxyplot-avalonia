@@ -231,10 +231,10 @@ namespace OxyPlot.Avalonia
         /// The on items source changed.
         /// </summary>
         /// <param name="e">Event args</param>
-        protected override void ItemsChanged(AvaloniaPropertyChangedEventArgs e)
+        protected override void LogicalChildrenCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
-            base.ItemsChanged(e);
-            SubscribeToCollectionChanged(e.OldValue as IEnumerable, e.NewValue as IEnumerable);
+            base.LogicalChildrenCollectionChanged(sender, e);
+            SubscribeToCollectionChanged(e.OldItems, e.NewItems);
             OnDataChanged();
         }
 

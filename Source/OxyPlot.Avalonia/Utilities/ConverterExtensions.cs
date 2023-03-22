@@ -430,7 +430,7 @@ namespace OxyPlot.Avalonia
         /// <param name="e">The <see cref="MouseWheelEventArgs" /> instance containing the event data.</param>
         /// <param name="relativeTo">The <see cref="IInputElement" /> that the event is relative to.</param>
         /// <returns>A <see cref="OxyMouseWheelEventArgs" /> containing the converted event arguments.</returns>
-        public static OxyMouseWheelEventArgs ToMouseWheelEventArgs(this PointerWheelEventArgs e, IInputElement relativeTo)
+        public static OxyMouseWheelEventArgs ToMouseWheelEventArgs(this PointerWheelEventArgs e, Visual relativeTo)
         {
             return new OxyMouseWheelEventArgs
             {
@@ -446,7 +446,7 @@ namespace OxyPlot.Avalonia
         /// <param name="e">The <see cref="MouseButtonEventArgs" /> instance containing the event data.</param>
         /// <param name="relativeTo">The <see cref="IInputElement" /> that the event is relative to.</param>
         /// <returns>A <see cref="OxyMouseEventArgs" /> containing the converted event arguments.</returns>
-        public static OxyMouseDownEventArgs ToMouseDownEventArgs(this PointerPressedEventArgs e, IInputElement relativeTo)
+        public static OxyMouseDownEventArgs ToMouseDownEventArgs(this PointerPressedEventArgs e, Visual relativeTo)
         {
             var point = e.GetCurrentPoint(relativeTo);
 
@@ -467,7 +467,7 @@ namespace OxyPlot.Avalonia
         /// <param name="e">The <see cref="MouseButtonEventArgs" /> instance containing the event data.</param>
         /// <param name="relativeTo">The <see cref="IInputElement" /> that the event is relative to.</param>
         /// <returns>A <see cref="OxyMouseEventArgs" /> containing the converted event arguments.</returns>
-        public static OxyMouseEventArgs ToMouseReleasedEventArgs(this PointerReleasedEventArgs e, IInputElement relativeTo)
+        public static OxyMouseEventArgs ToMouseReleasedEventArgs(this PointerReleasedEventArgs e, Visual relativeTo)
         {
             return new OxyMouseEventArgs
             {
@@ -482,7 +482,7 @@ namespace OxyPlot.Avalonia
         /// <param name="e">The <see cref="MouseEventArgs" /> instance containing the event data.</param>
         /// <param name="relativeTo">The <see cref="IInputElement" /> that the event is relative to.</param>
         /// <returns>A <see cref="OxyMouseEventArgs" /> containing the converted event arguments.</returns>
-        public static OxyMouseEventArgs ToMouseEventArgs(this PointerEventArgs e, IInputElement relativeTo)
+        public static OxyMouseEventArgs ToMouseEventArgs(this PointerEventArgs e, Visual relativeTo)
         {
             return new OxyMouseEventArgs
             {

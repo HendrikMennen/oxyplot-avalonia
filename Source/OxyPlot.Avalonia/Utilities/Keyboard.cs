@@ -24,7 +24,7 @@ namespace OxyPlot.Avalonia
 
         public Keyboard()
         {
-            InputManager.Instance.PreProcess.Subscribe(ProcessModifierKeys);
+            //InputManager.Instance.PreProcess.Subscribe(x => )
         }
 
         /// <summary>

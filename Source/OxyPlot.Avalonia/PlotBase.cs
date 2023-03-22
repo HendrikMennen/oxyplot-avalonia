@@ -50,7 +50,7 @@ namespace OxyPlot.Avalonia
         /// <summary>
         /// The current tracker.
         /// </summary>
-        private IControl currentTracker;
+        private Control currentTracker;
 
         /// <summary>
         /// The grid.
@@ -99,7 +99,7 @@ namespace OxyPlot.Avalonia
         {
             DisconnectCanvasWhileUpdating = true;
             trackerDefinitions = new ObservableCollection<TrackerDefinition>();
-            this.GetObservable(TransformedBoundsProperty).Subscribe(bounds => OnSizeChanged(this, bounds?.Bounds.Size ?? new Size()));
+            //this.GetObservable(Proper).Subscribe(bounds => OnSizeChanged(this, bounds?.Bounds.Size ?? new Size()));
         }
 
         /// <summary>
@@ -456,10 +456,10 @@ namespace OxyPlot.Avalonia
         /// <typeparam name="T">Type of the relevant parent</typeparam>
         /// <param name="obj">The object.</param>
         /// <returns>The relevant parent.</returns>
-        private Control GetRelevantParent<T>(IVisual obj)
+        private Control GetRelevantParent<T>(Visual obj)
             where T : Control
         {
-            var container = obj.VisualParent;
+            var container = obj.Parent as Visual;
 
             if (container is ContentPresenter contentPresenter)
             {
